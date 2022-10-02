@@ -46,15 +46,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun showsDialog() {
         val mOptionDialogFragment = OptionDialogFragment()
+        mOptionDialogFragment.show(supportFragmentManager, OptionDialogFragment::class.java.simpleName)
 
-        mOptionDialogFragment.showsDialog
 
-        var optionDialogListner: OnOptionDialogListener = object : OnOptionDialogListener {
-            override fun onOptionChosen(text: String?) {
-                Toast.makeText(applicationContext, text, Toast.LENGTH_SHORT).show()
-            }
-
-        }
     }
 
     override fun onClick(v: View?) {
@@ -63,6 +57,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val moveForResultIntent = Intent(this@MainActivity, MoveForResultActivity::class.java)
             resultLauncher.launch(moveForResultIntent)
         }
+        }
+    }
+
+    internal var optionDialogListner: OnOptionDialogListener = object : OnOptionDialogListener {
+        override fun onOptionChosen(text: String?) {
+            Toast.makeText(this@MainActivity, text, Toast.LENGTH_SHORT).show()
         }
     }
 }
