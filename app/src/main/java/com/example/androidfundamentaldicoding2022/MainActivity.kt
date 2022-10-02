@@ -4,12 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.androidfundamentaldicoding2022.databinding.ActivityMainBinding
 import com.example.androidfundamentaldicoding2022.ui.MoveForResultActivity
+import com.example.androidfundamentaldicoding2022.ui.dialog.OnOptionDialogListener
+import com.example.androidfundamentaldicoding2022.ui.dialog.OptionDialogFragment
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
+    private lateinit var binding : ActivityMainBinding
     private lateinit var btnMoveForResult: Button
 
     private val resultLauncher = registerForActivityResult(
@@ -23,13 +28,33 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         btnMoveForResult = findViewById(R.id.btn_move_for_result)
         btnMoveForResult.setOnClickListener(this)
 
         supportActionBar?.title = "A"
 
+        // SHOW DIALOG FROM ui.dialog.optionDialogFrament.kt
+        binding.btnShowDialog.setOnClickListener {
+            showsDialog()
+        }
+
+
+    }
+
+    private fun showsDialog() {
+        val mOptionDialogFragment = OptionDialogFragment()
+
+        mOptionDialogFragment.showsDialog
+
+        var optionDialogListner: OnOptionDialogListener = object : OnOptionDialogListener {
+            override fun onOptionChosen(text: String?) {
+                Toast.makeText(applicationContext, text, Toast.LENGTH_SHORT).show()
+            }
+
+        }
     }
 
     override fun onClick(v: View?) {

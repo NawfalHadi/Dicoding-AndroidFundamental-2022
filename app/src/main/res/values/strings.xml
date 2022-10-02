@@ -17,4 +17,15 @@
     <string name="data_received">Data Diterima</string>
     <string name="object_received">Object Diterima</string>
     <string name="this_is_moveactivity">Ini MoveActivity</string>
+
+
+    <!--Fragment-->
+    <string name="question_coach">Choose The Coach</string>
+    <string name="sir_alex_ferguson">Sir Alex Ferguson</string>
+    <string name="jose_mourinho">Jose Mourinho</string>
+    <string name="louis_van_gaal">Louis Van Gaal</string>
+    <string name="david_moyes">David Moyes</string>
+    <string name="close">Close</string>
+    <string name="show_dialog">Show Dialog</string>
+
 </resources>
