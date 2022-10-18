@@ -42,7 +42,10 @@
     Video playback: up to 13 hours\n
     Audio playback (via headset): up to 110 hours\n
     Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
-
+    <string name="search">Search Icon</string>
+    <string name="menu_1">Announcement Icon</string>
+    <string name="menu_2">Menu 2</string>
+    <string name="search_hint">Search Something</string>
 
 
 </resources>
