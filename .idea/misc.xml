@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18070652173913043" />
         <entry key="app/src/main/res/layout/activity_move_for_result.xml" value="0.18070652173913043" />
+        <entry key="app/src/main/res/layout/activity_scroll_view.xml" value="0.35260416666666666" />
         <entry key="app/src/main/res/layout/fragment_option_dialog.xml" value="0.35260416666666666" />
       </map>
     </option>
