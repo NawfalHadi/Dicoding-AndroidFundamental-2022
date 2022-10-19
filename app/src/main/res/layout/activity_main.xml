@@ -27,6 +27,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="action bar"/>
+        android:text="@string/action_bar"/>
+
+    <Button
+        android:id="@+id/btn_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/navigation_drawer"/>
 
 </LinearLayout>

@@ -12,6 +12,7 @@ import com.example.androidfundamentaldicoding2022.ui.MoveForResultActivity
 import com.example.androidfundamentaldicoding2022.ui.actionbar.ActionBarActivity
 import com.example.androidfundamentaldicoding2022.ui.dialog.OnOptionDialogListener
 import com.example.androidfundamentaldicoding2022.ui.dialog.OptionDialogFragment
+import com.example.androidfundamentaldicoding2022.ui.navigationdrawer.DrawerActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -44,6 +45,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.btnActionBar.setOnClickListener {
             startActivity(Intent(this, ActionBarActivity::class.java))
+        }
+
+        binding.btnNavigationDrawer.setOnClickListener {
+            startActivity(Intent(this, DrawerActivity::class.java))
         }
 
 
