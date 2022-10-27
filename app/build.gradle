@@ -49,6 +49,11 @@ dependencies {
     //Di dalamnya terdapat banyak komponen material design yang siap untuk Anda gunakan.
     implementation 'com.google.android.material:material:1.6.1'
 
+    // Coroutine Depedencies
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

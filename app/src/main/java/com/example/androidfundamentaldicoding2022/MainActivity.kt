@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.androidfundamentaldicoding2022.databinding.ActivityMainBinding
 import com.example.androidfundamentaldicoding2022.ui.MoveForResultActivity
 import com.example.androidfundamentaldicoding2022.ui.actionbar.ActionBarActivity
+import com.example.androidfundamentaldicoding2022.ui.asyncandbackground.AsyncActivity
 import com.example.androidfundamentaldicoding2022.ui.dialog.OnOptionDialogListener
 import com.example.androidfundamentaldicoding2022.ui.dialog.OptionDialogFragment
 import com.example.androidfundamentaldicoding2022.ui.navigationdrawer.DrawerActivity
@@ -49,6 +50,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.btnNavigationDrawer.setOnClickListener {
             startActivity(Intent(this, DrawerActivity::class.java))
+        }
+
+        binding.btnAsync.setOnClickListener {
+            startActivity(Intent(this, AsyncActivity::class.java))
         }
 
 

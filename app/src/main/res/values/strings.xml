@@ -68,5 +68,13 @@
     <string name="action_bar">Action Bar</string>
     <string name="navigation_drawer">Navigation Drawer</string>
 
+    <!--  Async & Background Proccesing  -->
+    <string name="start_task">Start Task</string>
+    <string name="status">Status</string>
+    <string name="hidden_text">Now you see me!</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="compressing">Compresssing %d %%</string>
+    <string name="async_and_background_process">Async And background process</string>
+
 
 </resources>

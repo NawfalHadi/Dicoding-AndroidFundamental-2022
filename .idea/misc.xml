@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_async.xml" value="0.2857745884339384" />
         <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.1470713980333476" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18070652173913043" />
         <entry key="app/src/main/res/layout/activity_move_for_result.xml" value="0.18070652173913043" />
