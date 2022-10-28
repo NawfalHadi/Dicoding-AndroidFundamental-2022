@@ -15,4 +15,32 @@
         android:layout_marginBottom="16dp"
         android:text="@string/move_with_result" />
 
+    <Button
+        android:id="@+id/btn_show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/show_dialog" />
+
+    <Button
+        android:id="@+id/btn_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/action_bar"/>
+
+    <Button
+        android:id="@+id/btn_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/navigation_drawer"/>
+
+    <Button
+        android:id="@+id/btn_async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/async_and_background_process"/>
+
 </LinearLayout>
