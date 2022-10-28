@@ -75,6 +75,21 @@
     <string name="task_completed">Task Completed</string>
     <string name="compressing">Compresssing %d %%</string>
     <string name="async_and_background_process">Async And background process</string>
+    <string name="library_networking">Library Networking</string>
+    <string name="web_api_and_parsing_json">WEB API AND PARSING JSON</string>
+
+    <!-- Networkin LoopJ & Parsing Data -->
+    <string name="quote">When do you think people die? When they are shot through the heart by the bullet of a pistol? No. When they are ravaged by an incurable disease? No. When they drink a soup made from a poisonous mushroom!? No! It’s when… they are FORGOTTEN.</string>
+    <string name="author">- Dr. Hiluluk</string>
+    <string name="show_list_quotes">Show me list of quotes</string>
+
+    <!-- Restaurant Review With REtrofit -->
+    <string name="title">Judul</string>
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+    <string name="write_your_review_here">Write your review here..</string>
+    <string name="send">Kirim</string>
+    <string name="restaurant_api_with_retrofit">Restaurant Api With REtrofit</string>
 
 
 </resources>
