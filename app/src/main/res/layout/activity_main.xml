@@ -43,4 +43,11 @@
         android:layout_marginBottom="16dp"
         android:text="@string/async_and_background_process"/>
 
+    <Button
+        android:id="@+id/btn_webAPi_parsing_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/web_api_and_parsing_json"/>
+
 </LinearLayout>

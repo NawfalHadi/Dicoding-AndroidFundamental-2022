@@ -14,6 +14,7 @@ import com.example.androidfundamentaldicoding2022.ui.asyncandbackground.AsyncAct
 import com.example.androidfundamentaldicoding2022.ui.dialog.OnOptionDialogListener
 import com.example.androidfundamentaldicoding2022.ui.dialog.OptionDialogFragment
 import com.example.androidfundamentaldicoding2022.ui.navigationdrawer.DrawerActivity
+import com.example.androidfundamentaldicoding2022.ui.webapiandparsingjson.JsonApiActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -54,6 +55,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.btnAsync.setOnClickListener {
             startActivity(Intent(this, AsyncActivity::class.java))
+        }
+
+        binding.btnWebAPiParsingJson.setOnClickListener {
+            startActivity(Intent(this, JsonApiActivity::class.java))
         }
 
 
