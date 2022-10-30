@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidfundamentaldicoding2022.databinding.ActivityMainBinding
+import com.example.androidfundamentaldicoding2022.modulviewmodel.ViewModelActivity
 import com.example.androidfundamentaldicoding2022.ui.MoveForResultActivity
 import com.example.androidfundamentaldicoding2022.ui.actionbar.ActionBarActivity
 import com.example.androidfundamentaldicoding2022.ui.asyncandbackground.AsyncActivity
@@ -61,7 +62,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(Intent(this, JsonApiActivity::class.java))
         }
 
-
+        binding.btnViwModel.setOnClickListener {
+            startActivity(Intent(this, ViewModelActivity::class.java))
+        }
     }
 
     private fun showsDialog() {

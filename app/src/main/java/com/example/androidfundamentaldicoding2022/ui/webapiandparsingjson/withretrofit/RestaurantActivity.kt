@@ -124,6 +124,6 @@ class RestaurantActivity : AppCompatActivity() {
     }
 
     private fun showLoading(b: Boolean) {
-
+        print(b)
     }
 }

@@ -6,55 +6,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".modulviewmodel.ViewModelActivity">
 
-    <Button
-        android:id="@+id/btn_move_for_result"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/length" />
+
+    <EditText
+        android:id="@+id/edt_length"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/move_with_result" />
+        android:inputType="numberDecimal"
+        android:lines="1" />
 
-    <Button
-        android:id="@+id/btn_show_dialog"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/width" />
+
+    <EditText
+        android:id="@+id/edt_width"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/show_dialog" />
+        android:inputType="numberDecimal"
+        android:lines="1" />
 
-    <Button
-        android:id="@+id/btn_action_bar"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/height" />
+
+    <EditText
+        android:id="@+id/edt_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/action_bar"/>
+        android:inputType="numberDecimal"
+        android:lines="1" />
 
     <Button
-        android:id="@+id/btn_navigation_drawer"
+        android:id="@+id/btn_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/navigation_drawer"/>
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn_async"
+        android:id="@+id/btn_use_livedata"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/async_and_background_process"/>
-
-    <Button
-        android:id="@+id/btn_webAPi_parsing_json"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/web_api_and_parsing_json"/>
-
-    <Button
-        android:id="@+id/btn_viwModel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/view_model_practice"/>
+        android:layout_height="match_parent"
+        android:text="@string/use_live_data_ppractice"/>
 
 </LinearLayout>

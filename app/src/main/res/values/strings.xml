@@ -91,5 +91,16 @@
     <string name="send">Kirim</string>
     <string name="restaurant_api_with_retrofit">Restaurant Api With REtrofit</string>
 
+    <!-- Viewmodel Modul -->
+    <string name="width">Lebar</string>
+    <string name="result">Hasil</string>
+    <string name="calculate">Hitung</string>
+    <string name="height">Tinggi</string>
+    <string name="length">Panjang</string>
+    <string name="hello_dicoding">Hello Dicoding</string>
+    <string name="seconds">%d seconds elapsed</string>
+    <string name="view_model_practice">View Model Practice</string>
+    <string name="use_live_data_ppractice">USE LIVE DATA pPRACTICE</string>
+
 
 </resources>
