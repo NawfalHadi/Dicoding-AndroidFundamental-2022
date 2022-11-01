@@ -16,6 +16,7 @@ import com.example.androidfundamentaldicoding2022.model.restaurant.CustomerRevie
 import com.example.androidfundamentaldicoding2022.model.restaurant.ResponseData
 import com.example.androidfundamentaldicoding2022.model.restaurant.Restaurant
 import com.example.androidfundamentaldicoding2022.model.restaurant.post.PostReviewResponse
+import com.google.android.material.snackbar.Snackbar
 import cz.msebera.android.httpclient.protocol.ResponseDate
 import retrofit2.Call
 import retrofit2.Callback
@@ -55,11 +56,22 @@ class RestaurantActivity : AppCompatActivity() {
             showLoading(it)
         }
 
+        viewModel.snackbarText.observe(this){
+            it.getContentIfNotHandled()?.let { snackbarText ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    snackbarText,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
+        }
+
         binding.btnSend.setOnClickListener { view ->
             viewModel.postReview(binding.edReview.text.toString())
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
+
     }
 
 

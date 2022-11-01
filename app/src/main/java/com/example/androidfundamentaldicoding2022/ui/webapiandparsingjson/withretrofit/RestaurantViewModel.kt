@@ -9,6 +9,7 @@ import com.example.androidfundamentaldicoding2022.model.restaurant.CustomerRevie
 import com.example.androidfundamentaldicoding2022.model.restaurant.ResponseData
 import com.example.androidfundamentaldicoding2022.model.restaurant.Restaurant
 import com.example.androidfundamentaldicoding2022.model.restaurant.post.PostReviewResponse
+import com.example.androidfundamentaldicoding2022.wrapper.Event
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,6 +24,9 @@ class RestaurantViewModel : ViewModel() {
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
+
+    private val _snackbarText = MutableLiveData<Event<String>>()
+    val snackbarText: LiveData<Event<String>> = _snackbarText
 
     companion object{
         private const val TAG = "MainViewModel"
@@ -64,6 +68,7 @@ class RestaurantViewModel : ViewModel() {
                 _isLoading.value = false
                 if (response.isSuccessful) {
                     _listReview.value = response.body()?.customerReviews as List<CustomerReview>?
+                    _snackbarText.value = Event(response.body()?.message.toString())
                 } else {
                     Log.e(TAG, "onFailure: ${response.message()}")
                 }
